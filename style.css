@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+header input {
+  display: none;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  height: 40px;
+}
+
+header nav label {
+  position: absolute;
+  font-size: 23px;
+  top: 8.5px;
+  left: 10px;
+}
+
+header nav label .fa-bars {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header nav img {
+  width: 170px;
+}
+
+header nav ul {
+  position: fixed;
+  background-color: #bb0505;
+  width: 100%;
+  top: -180px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+header nav ul li {
+  list-style: none;
+  text-align: center;
+  padding: 15px 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Bree Serif";
+}
+
+main .section1 {
+  height: 625px;
+  position: relative;
+  top: 48px;
+}
+
+main .section1 div {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  top: 157.5px;
+  height: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section1 div h2 {
+  color: red;
+  font-family: "Bree Serif";
+  font-size: 40px;
+}
+
+main .section1 div p {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+}
+
+main .section1 div a {
+  font-family: "Bree Serif";
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 190px;
+  border: 1px solid red;
+  font-size: 23px;
+}
+
+main .section1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .section2 {
+  background-color: black;
+  width: 100%;
+  height: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .section2 .container-titulo2 {
+  width: 100%;
+  text-align: center;
+}
+
+main .section2 .container-titulo2 h2 {
+  font-family: "Bree Serif";
+  color: white;
+}
+
+main .section2 .container-padre {
+  width: 100%;
+  height: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .section2 .container-padre .container-hijo {
+  width: 160px;
+  background-color: red;
+  height: 160px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  text-decoration: none;
+}
+
+main .section2 .container-padre .container-hijo .fa-music {
+  font-size: 45px;
+}
+
+main .section2 .container-padre .container-hijo p {
+  font-size: 25px;
+  font-family: "Bree Serif";
+}
+
+footer {
+  width: 100%;
+  background-color: red;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div a {
+  font-size: 40px;
+  color: black;
+  padding: 0 10px;
+}
+
+footer p {
+  font-family: "Bree Serif";
+  font-size: 18px;
+}
+
+@media screen and (min-width: 850px) {
+  header nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+  }
+  header nav label {
+    display: none;
+  }
+  header nav ul {
+    position: inherit;
+    display: inherit;
+    top: 0;
+    width: auto;
+    background-color: inherit;
+  }
+  header nav ul li {
+    padding: 0 20px;
+    width: 100px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  header nav ul li a:hover {
+    color: white;
+    font-size: 21px;
+  }
+  main .section1 div h2 {
+    font-size: 50px;
+  }
+  main .section1 div p {
+    font-size: 30px;
+  }
+  main .section2 {
+    height: 500px;
+  }
+  main .section2 .container-titulo2 {
+    margin-top: 60px;
+  }
+  main .section2 .container-titulo2 h2 {
+    font-size: 40px;
+    padding: 1;
+  }
+  main .section2 .container-padre {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .section2 .container-padre .container-hijo {
+    width: 200px;
+    height: 200px;
+  }
+  main .section2 .container-padre .container-hijo:hover {
+    color: white;
+    background-color: #d40000;
+    border: 1px solid white;
+  }
+  footer {
+    height: 190px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  footer div a {
+    font-size: 50px;
+  }
+  footer div a:hover {
+    color: white;
+  }
+  footer p {
+    font-size: 25px;
+  }
+}
+
+#icon-menu:checked ~ nav ul {
+  top: 40px;
+}
+
+#icon-menu:checked ~ nav label .fa-bars {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/*# sourceMappingURL=style.css.map */

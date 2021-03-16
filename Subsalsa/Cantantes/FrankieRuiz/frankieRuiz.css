@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+header input {
+  display: none;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  height: 40px;
+}
+
+header nav label {
+  position: absolute;
+  font-size: 23px;
+  top: 8.5px;
+  left: 10px;
+}
+
+header nav label .fa-bars {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header nav img {
+  width: 170px;
+}
+
+header nav ul {
+  position: fixed;
+  background-color: #bb0505;
+  width: 100%;
+  top: -180px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+header nav ul li {
+  list-style: none;
+  text-align: center;
+  padding: 15px 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Bree Serif";
+}
+
+footer {
+  width: 100%;
+  background-color: red;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 150px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div a {
+  font-size: 40px;
+  color: black;
+  padding: 0 10px;
+}
+
+footer p {
+  font-family: "Bree Serif";
+  font-size: 18px;
+}
+
+main {
+  position: relative;
+  top: 39px;
+}
+
+main .contenedor_biography {
+  width: 95%;
+  margin: auto;
+  background-color: #ffffffab;
+  position: relative;
+  top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 304px;
+  border: 3px groove red;
+}
+
+main .contenedor_biography img {
+  width: 228px;
+  float: left;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+main .contenedor_biography .biography {
+  font-family: "Bree Serif";
+}
+
+main .contenedor_biography .biography h1 {
+  font-size: 45px;
+  color: red;
+}
+
+main .contenedor_biography .biography p {
+  color: black;
+  margin: 10px 0;
+}
+
+main .canciones {
+  width: 95%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffffab;
+  position: relative;
+  top: 40px;
+  margin: 0 auto;
+  border: 3px groove red;
+  border-radius: 10px;
+}
+
+main .canciones h2 {
+  font-family: "Bree Serif";
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+main .canciones .containerCanciones {
+  width: 95%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .canciones .containerCanciones .listCanciones {
+  width: 95%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+}
+
+main .canciones .containerCanciones .listCanciones p {
+  font-family: "Bree Serif";
+  font-size: 15px;
+}
+
+main .canciones .containerCanciones .listCanciones a {
+  text-decoration: none;
+  font-family: "Bree Serif";
+  font-size: 15px;
+  color: white;
+}
+
+main .canciones .containerCanciones .listCanciones a .fa-play-circle {
+  margin-right: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+  }
+  header nav label {
+    display: none;
+  }
+  header nav a {
+    height: 22.44px;
+  }
+  header nav ul {
+    position: inherit;
+    display: inherit;
+    top: 0;
+    width: auto;
+    background-color: inherit;
+  }
+  header nav ul li {
+    padding: 0 20px;
+    width: 100px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  header nav ul li a:hover {
+    color: white;
+    font-size: 21px;
+  }
+  main {
+    top: 60px;
+  }
+  main .canciones h2 {
+    height: 35px;
+  }
+  main .canciones .containerCanciones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .canciones .containerCanciones .listCanciones {
+    width: 35%;
+  }
+  main .canciones .containerCanciones .listCanciones a:hover {
+    color: black;
+  }
+  footer {
+    height: 190px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  footer div a {
+    font-size: 50px;
+  }
+  footer div a:hover {
+    color: white;
+  }
+  footer p {
+    font-size: 25px;
+  }
+}
+
+#icon-menu:checked ~ nav ul {
+  top: 40px;
+}
+
+#icon-menu:checked ~ nav label .fa-bars {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/*# sourceMappingURL=frankieRuiz.css.map */
